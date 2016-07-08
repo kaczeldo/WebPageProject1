@@ -1,4 +1,35 @@
 /* CSS Document */
+#centeringDiv{
+position: absolute;
+left: 50%;
+margin-left: -400px;
+top: 50%;
+margin-top: -340px;
+background-color: blue;
+width: 800px;
+height: 680px;
+}
+
 #topBar{
-color: blue;
+width: 800px;
+height: 150px;
+background-color: orange;
+}
+
+#logo{
+width: 800px;
+height: 75px;
+background-color: red;
+}
+
+#navigationMenu{
+width:800px;
+height: 75px;
+background-color: violet;
+}
+
+#contentBar{
+width: 800px;
+height: 530px;
+background-color: yellow;
 }
