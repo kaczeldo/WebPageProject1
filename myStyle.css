@@ -28,6 +28,30 @@ height: 75px;
 background-color: violet;
 }
 
+.navigationLink{
+	background-color: blue;
+	width: 200px;
+	height: 35px;
+	float: left;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+}
+
+.navigationLink p{
+	margin-top: 5px;
+}
+
+#navigationMenu a:hover{
+	background-color: green;
+	color: red;
+}
+
+#navigationMenu a:active{
+	background-color: green;
+	color: green;
+}
+
 #contentBar{
 width: 800px;
 height: 530px;
