@@ -1,49 +1,65 @@
 /* CSS Document */
+body{
+background-color: #ffffcc;
+}
+
 #centeringDiv{
 position: absolute;
 left: 50%;
 margin-left: -400px;
 top: 50%;
 margin-top: -340px;
-background-color: blue;
 width: 800px;
 height: 680px;
+background-color: #ffffcc;
 }
 
 #topBar{
 width: 800px;
 height: 150px;
-background-color: orange;
-}
+background-color: #ffffcc;
+}      
 
 #logo{
-width: 800px;
-height: 75px;
-background-color: red;
+width: 796px;
+height: 71px;
+border: 2px solid black;
+}
+
+#logo img{
+width:796px;
+height: 71px;
 }
 
 #navigationMenu{
 width:800px;
 height: 75px;
-background-color: violet;
 }
 
 .navigationLink{
 	background-color: blue;
-	width: 200px;
-	height: 35px;
+	width: 198px;
+	height: 34px;
 	float: left;
 	text-align: center;
 	text-decoration: none;
 	font-size: 18px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid black;
+  border-top: 0px;
 }
 
 .navigationLink p{
 	margin-top: 5px;
 }
 
+#navigationMenu a{
+	background-color: blue;
+	color: black;
+}
+
 #navigationMenu a:hover{
-	background-color: green;
+	background-color: cyan;
 	color: red;
 }
 
@@ -53,7 +69,16 @@ background-color: violet;
 }
 
 #contentBar{
-width: 800px;
-height: 530px;
-background-color: yellow;
+width: 796px;
+height: 526px;
+background-color: #ccffff;
+border-top-right-radius: 15px;
+border-top-left-radius: 15px;
+border: 2px solid black;
+overflow: auto;
+}
+      
+#contentBar p.content {
+margin-left: 15px; 
+margin-right: 15px;
 }
