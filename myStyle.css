@@ -3,15 +3,12 @@ body{
 background-color: #ffffcc;
 }
 
-#centeringDiv{
-position: absolute;
-left: 50%;
-margin-left: -400px;
-top: 50%;
-margin-top: -340px;
-width: 800px;
-height: 680px;
-background-color: #ffffcc;
+#centeringDiv {
+  margin: auto;
+  width: 800px;
+  height: 680px;
+  background-color: #ffffcc;
+  position: relative;
 }
 
 #topBar{
@@ -38,7 +35,7 @@ height: 75px;
 
 .navigationLink{
 	background-color: blue;
-	width: 198px;
+  width: 198px;
 	height: 34px;
 	float: left;
 	text-align: center;
