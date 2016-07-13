@@ -1,82 +1,73 @@
 /* CSS Document */
 body{
-background-color: #ffffcc;
+  background-color: #ffffcc;
 }
 /*this div should center whole page + determine size of page*/
 #centeringDiv {
   margin: auto;
   width: 800px;
-  height: 680px;
-  background-color: #ffffcc;
   position: relative;
 }
-
-/*in this div are: navigation menu and logo*/
-#topBar{
-width: 800px;
-height: 150px;
-background-color: #ffffcc;
-}      
-
+   
 /*logo*/
 #logo{
-width: 796px;
-height: 71px;
-border: 2px solid black;
+  width: 796px;
+  height: 71px;
+  border: 2px solid black;
 }
 
 #logo img{
-width:796px;
-height: 71px;
+  width:796px;
+  height: 71px;
 }
 
 /*navigacni menu*/
 #navigationMenu{
-width:800px;
-height: 75px;
+  width:800px;
+  background-color: red;
 }
 
-.navigationLink{
-	background-color: blue;
-  width: 198px;
-	height: 34px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
-  border-bottom-right-radius: 10px;
-  border: 1px solid black;
-  border-top: 0px;
+/**/
+#navigationMenu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #dddddd;
+  overflow: hidden;
+  border:1px solid black;
+  height: 40px;
 }
 
-.navigationLink p{
-	margin-top: 5px;
+#navigationMenu li{
+  float: left;
+  border-right:1px solid black;
 }
 
-#navigationMenu a{
-	background-color: blue;
-	color: black;
+#navigationMenu li a{
+  color: orange;
+  display: block;
+  text-align: center;
+  padding: 5px 10px 15px 10px;
+  text-decoration: none;
 }
 
-#navigationMenu a:hover{
-	background-color: cyan;
-	color: red;
+#navigationMenu li a:hover:not(.active){
+  background-color: cyan;
 }
 
-#navigationMenu a:active{
-	background-color: green;
-	color: green;
+.active{
+  background-color: blue;
 }
 
 /*div ve kterem je text a vlastne celkovy obsah stranky*/
 #contentBar{
-width: 796px;
-height: 526px;
-background-color: #ccffff;
-border-top-right-radius: 15px;
-border-top-left-radius: 15px;
-border: 2px solid black;
-overflow: auto;
+  width: 796px;
+  height: 526px;
+  background-color: #ccffff;
+  border-top-left-radius: 15px;
+  border: 2px solid black;
+  overflow: auto;
+  margin-top: 15px;
 }
 
 /*styl textu v hlavnim baru*/      
