@@ -35,7 +35,6 @@ body{
   background-color: #dddddd;
   overflow: hidden;
   border:1px solid black;
-  height: 40px;
 }
 
 #navigationMenu li{
@@ -47,7 +46,7 @@ body{
   color: orange;
   display: block;
   text-align: center;
-  padding: 5px 10px 15px 10px;
+  padding: 6px 10px 5px 10px;
   text-decoration: none;
 }
 
