@@ -1,59 +1,88 @@
 /* CSS Document */
-#centeringDiv{
-position: absolute;
-left: 50%;
-margin-left: -400px;
-top: 50%;
-margin-top: -340px;
-background-color: blue;
-width: 800px;
-height: 680px;
+body{
+  background-color: #ffffcc;
 }
-
-#topBar{
-width: 800px;
-height: 150px;
-background-color: orange;
+/*this div should center whole page + determine size of page*/
+#centeringDiv {
+  margin: auto;
+  width: 800px;
+  position: relative;
 }
-
+   
+/*logo*/
 #logo{
-width: 800px;
-height: 75px;
-background-color: red;
+  width: 796px;
+  height: 71px;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
+#logo img{
+  width:796px;
+  height: 71px;
+}
+
+/*navigacni menu*/
 #navigationMenu{
-width:800px;
-height: 75px;
-background-color: violet;
+  width:800px;
+  background-color: red;
 }
 
-.navigationLink{
-	background-color: blue;
-	width: 200px;
-	height: 35px;
-	float: left;
-	text-align: center;
-	text-decoration: none;
-	font-size: 18px;
+/**/
+#navigationMenu ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #669999;
+  overflow: hidden;
+  border-top:1px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
 }
 
-.navigationLink p{
-	margin-top: 5px;
+#navigationMenu li{
+  float: left;
+  border-right:1px solid black;
 }
 
-#navigationMenu a:hover{
-	background-color: green;
-	color: red;
+#navigationMenu li a{
+  color: black;
+  display: block;
+  text-align: center;
+  padding: 6px 10px 5px 10px;
+  text-decoration: none;
+  text-shadow: 1px 1px;
 }
 
-#navigationMenu a:active{
-	background-color: green;
-	color: green;
+#navigationMenu li a:hover:not(.active){
+  background-color: #a3c2c2;
+  text-shadow: 2px 2px;
 }
 
+#navigationMenu li a:active:not(.active){
+  background-color: white;
+  text-shadow: 3px 3px;
+}
+
+.active{
+  background-color: #336600;
+}
+
+/*div ve kterem je text a vlastne celkovy obsah stranky*/
 #contentBar{
-width: 800px;
-height: 530px;
-background-color: yellow;
+  width: 796px;
+  height: 526px;
+  background-color: #ccffff;
+  border-top-left-radius: 15px;
+  border: 2px solid black;
+  overflow: auto;
+  margin-top: 15px;
+}
+
+/*styl textu v hlavnim baru*/      
+#contentBar p.content {
+margin-left: 15px; 
+margin-right: 15px;
 }
