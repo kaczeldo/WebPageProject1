@@ -54,6 +54,7 @@ body{
   padding: 6px 10px 5px 10px;
   text-decoration: none;
   text-shadow: 1px 1px;
+  font-family: arial;
 }
 
 #navigationMenu li a:hover:not(.active){
