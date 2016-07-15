@@ -13,7 +13,9 @@ body{
 #logo{
   width: 796px;
   height: 71px;
-  border: 2px solid black;
+  border-top: 2px solid black;
+  border-right: 2px solid black;
+  border-left: 2px solid black;
 }
 
 #logo img{
@@ -32,9 +34,12 @@ body{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  background-color: #dddddd;
+  background-color: #669999;
   overflow: hidden;
-  border:1px solid black;
+  border-top:1px solid black;
+  border-left:2px solid black;
+  border-right:2px solid black;
+  border-bottom:2px solid black;
 }
 
 #navigationMenu li{
@@ -43,19 +48,26 @@ body{
 }
 
 #navigationMenu li a{
-  color: orange;
+  color: black;
   display: block;
   text-align: center;
   padding: 6px 10px 5px 10px;
   text-decoration: none;
+  text-shadow: 1px 1px;
 }
 
 #navigationMenu li a:hover:not(.active){
-  background-color: cyan;
+  background-color: #a3c2c2;
+  text-shadow: 2px 2px;
+}
+
+#navigationMenu li a:active:not(.active){
+  background-color: white;
+  text-shadow: 3px 3px;
 }
 
 .active{
-  background-color: blue;
+  background-color: #336600;
 }
 
 /*div ve kterem je text a vlastne celkovy obsah stranky*/
