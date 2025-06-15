@@ -86,7 +86,7 @@ article section a {
 body > header {
     height: 100px;
     width: 100%;
-    background: #00386B;
+    background: #03191E;
     color: white;
     display: flex;
     justify-content: space-evenly;
@@ -96,17 +96,17 @@ body > header {
 }
 
 #logo {
-    height: 40px;
+    height: 60px;
     margin: auto 0 auto 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: url('obrazky/haskel.png') no-repeat;
-    background-size: 40px 40px;
+    background: url('images/logo.png') no-repeat;
+    background-size: 60px 60px;
 }
 
 #logo > * {
-    margin: 0 0 0 50px;
+    margin: 0 0 0 65px;
 }
 
 #logo h1 {
