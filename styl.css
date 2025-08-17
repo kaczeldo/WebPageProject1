@@ -12,7 +12,7 @@
 
 body {
     font: 14px "Poppins";
-    background: #F9F9F9;
+    background: #E8E9EB;
     box-sizing: border-box;
     margin: 0;
     padding: 100px 0 0 0;
@@ -20,9 +20,9 @@ body {
 }
 
 .avatar {
-    width: 300px;
+    width: 280px;
     float: right;
-    padding-left: 10px;
+    margin-left: 10px;
     filter: grayscale(1);
     border: 1px solid black;
 }
@@ -43,7 +43,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-    color: #00386B;
+    color: #03191E;
     padding: 10px 0;
 }
 
@@ -74,7 +74,7 @@ article section a {
 }
 
 .reference-tlacitko {
-    background: #70B73A;
+    background: #DF2935;
     color: white;
     font-size: 0.9em;
     text-transform: uppercase;
@@ -165,11 +165,11 @@ nav ul a:hover, .aktivni a {
 }
 
 html{
-    background: #414042;
+    background: #03191E;
 }
 
 footer {
-    background: #414042;
+    background: #03191E;
     color: white;
     height: 100px;
     text-align: center;

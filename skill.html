@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal portfolio of Matej Grot">
+    <meta name="keywords" content="portfolio, web design, programming, front-end, back-end">
+    <meta name="author" content="Matej Grot">
+    <link rel="stylesheet" href="styl.css" type="text/css" class="avatar">
+    <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+    <link rel="shortcut icon" href="obrazky/10692893_spray_paint_graffiti_king_art_icon.ico">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <title>GeeWebDesign</title>
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>Matěj <span>Grot</span></h1>
+            <small>Developer</small>
+        </div>
+        <nav>
+            <ul>
+                <li class="aktivni"><a href="index.html">Domů</a></li>
+                <li><a href="oMne.html">O mně</a></li>
+                <li><a href="dovednosti.html">Dovednosti</a></li>
+                <li><a href="reference.html">Reference</a></li>
+                <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <header>
+            <h1>O mě</h1>
+        </header>
+        <section id="warrior-section" style="width: 600px; height: 400px; border: 1px solid #333;">
+        </section>
+    </article>
+
+    <footer>
+        Vytvořil &copy;HoBi 2021 pro <a href="https://itnetwork.cz">itnetwork.cz</a>
+    </footer>
+
+    <script type="module">
+        import * as THREE from './three/three.module.js';
+        import { GLTFLoader } from './three/GLTFLoader.js';
+
+        const section = document.getElementById("warrior-section");
+        const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+        renderer.setSize(section.clientWidth, section.clientHeight);
+        section.appendChild(renderer.domElement);
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(
+            45,
+            section.clientWidth / section.clientHeight,
+            0.1,
+            1000
+        );
+        camera.position.set(0, 1.5, 3);
+        camera.lookAt(0, 0, 0);
+
+        const light = new THREE.DirectionalLight(0xffffff, 1);
+        light.position.set(5, 10, 7.5);
+
+        const loader = new GLTFLoader();
+        loader.load('/warrior_toy/scene.gltf', (gltf) => {
+            const warrior = gltf.scene;
+            warrior.scale.set(5, 5, 5);
+
+            const box = new THREE.Box3().setFromObject(warrior);
+            const center = new THREE.Vector3();
+            box.getCenter(center);
+            warrior.position.sub(center);
+
+            const size = new THREE.Vector3();
+            box.getSize(size);
+            warrior.position.y += size.y / 2;
+
+            const pivot = new THREE.Group();
+            pivot.add(warrior);
+            scene.add(pivot);
+            scene.add(light);
+
+            warrior.position.y = 0;
+
+            function animate() {
+                requestAnimationFrame(animate);
+                pivot.rotation.y += 0.01;
+                renderer.render(scene, camera);
+            }
+
+            animate();
+        });
+    </script>
+</body>
+
+</html>
