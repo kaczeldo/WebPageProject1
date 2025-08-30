@@ -1,68 +1,127 @@
 <!DOCTYPE html>
 
 <html lang="cs-cz">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="description" content="Personal portfolio of Matej Grot">
-        <meta name="keywords" content="portfolio, web design, programming, front-end, back-end">
-        <meta name="author" content="Matej Grot">
-        <link rel="stylesheet" href="styl.css" type="text/css" class="avatar">
-        <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
-        <script src="js/lightbox-plus-jquery.min.js"></script>
-        <link rel="shortcut icon" href="obrazky/10692893_spray_paint_graffiti_king_art_icon.ico">
-        <title>GeeWebDesign</title>
-    </head>
-    <body>
-        <header>
-            <div id="logo">
-                <h1>Matěj <span>Grot</span></h1>
-                <small>Developer</small>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal portfolio of Matej Grot">
+    <meta name="keywords"
+        content="portfolio, web-design, programming, front-end, back-end, developer, junior, Java, React, JavaScript">
+    <meta name="author" content="Matej Grot">
+
+    <link rel="stylesheet" href="styl_about.css" type="text/css" class="avatar">
+    <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+    <link rel="shortcut icon" href="obrazky/10692893_spray_paint_graffiti_king_art_icon.ico">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/translate.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.0.3/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea[id*=content]",
+            entities: "160,nbsp",
+            entity_encoding: "named",
+            entity_encoding: "raw"
+        });
+    </script>
+
+    <title>GeeWebDesign</title>
+</head>
+
+<body id="home-body">
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand d-flex" href="#">
+                <img src="./images/logo.png" class="d-inline-block align-top" width="32" height="32" alt="Twitter" />
+                <div class="d-flex flex-column align-items-start">
+                    <div>
+                        Matěj <span>Grot</span>
+                    </div>
+                    <small>Developer</small>
+                </div>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#obsah-navigacni-listy" aria-controls="obsah-navigacni-listy" aria-expanded="false"
+                aria-label="Rozbalit navigaci">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="obsah-navigacni-listy">
+                <ul class="navbar-nav ms-auto" style="margin-right: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link aktivni" aria-current="page" data-i18n="link-home" href="index.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="link-about" href="about.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="link-cv" href="skill.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="link-portfolio" href="portfolio.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kontakt" data-i18n="link-contact" href="kontakt.html"></a>
+                    </li>
+                </ul>
+
             </div>
-            <nav>
-                <ul>
-                    <li class="aktivni"><a href="index.html">Domů</a></li>
-                    <li><a href="oMne.html">O mně</a></li>
-                    <li><a href="dovednosti.html">Dovednosti</a></li>
-                    <li><a href="reference.html">Reference</a></li>
-                    <li><a class="kontakt-tlacitko" href="kontakt.html">Kontakt</a></li>
-                </ul>
-            </nav>
-        </header>
-        <article>
-            <header>
-                <h1>O mě</h1>
-            </header>
-            <section>
-                
-                <p class="centrovany"><img src="obrazky/MG_Real_Portrait.jpg" class="avatar"></p>
-                <p> Jsem Matěj Grot a pocházím z Jižní Moravy, z obce Hrušky. Informatika mě přitahovala již od základní školy. Proto jsem po dokončení gymnázia zahájil studium na Masarykově 
-                    Univerzitě, Fakulta Informatiky. Bohužel tou dobou jsem nebyl dostatečně disciplinovaný a zorganizovaný a studium jsem nedokončil. 
-                    I tak jsem se ale informatiky držel a začal jsem pracovat jako manuální tester ve firmě Worklio, kde jsem se postupně vypracoval až na Produktového manažera. Na této pozici
-                    jsem se však necítil ve své kůži a rozhodl jsem se, že to s programováním zkusím ještě jednou. Rozhodl jsem se pro rekvalifikační kurz. To mi dalo nové nadšení a 
-                    otevřelo mnohé obzory. Již od začátku mě velice lákal web development a k tomu jsem se také dostal, skrze frameworky Spring Boot a React. 
-                    Nyní hledám práci na pozici webového vývojáře, ať už je to back-end či front-end. Myslím že vyvíjet webové aplikace je pro mě to nejzajímavější.
-                </p>
-                <h2>Rozvržení Webu</h2>
-                <p> Co můžete najít na tomto webu:</p>
-                <ul class="list">
-                    <li class="list-item">
-                        <a href="dovednosti.html">Dovednosti</a>
-                    </li>
-                    <li class="list-item">
-                        Zivotopis
-                    </li>
-                </ul>
+            <select class="position-absolute top-0 end-0 mt-2 me-2 form-select w-auto" id="languageSwitcher">
+                <option value="en">EN</option>
+                <option value="cz">CZ</option>
+            </select>
 
-                <div class="cistic"></div>
+        </nav>
+    </header>
 
-                <p class="tlacitko-odstavec">
-                    <a href="reference.html" class="reference-tlacitko" target="_blank">Moje reference</a>
-                </p>
-            </section>
-        </article>
 
-        <footer>
-            Vytvořil &copy;HoBi 2021 pro <a href="https://itnetwork.cz">itnetwork.cz</a>
-        </footer>
-    </body>
+    <article>
+        <section id="welcome">
+            <div class="image-part">
+                <h1 data-i18n="h1-welcome"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-welcome"></p>
+            </div>
+        </section>
+
+        <section id="list-of-pages">
+            <ul>
+                <li><a href="index.html" data-i18n="home-page"></a></li>
+                <li><a href="about.html" data-i18n="about-page"></a></li>
+                <li><a href="skill.html" data-i18n="skills-page"></a></li>
+                <li><a href="portfolio.html" data-i18n="portfolio-page"></a></li>
+                <li><a href="kontakt.html" data-i18n="contact-page"></a></li>
+            </ul>
+        </section>
+    </article>
+
+    <footer class="d-flex justify-content-evenly align-items-center row">
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            Tel: +420 604467627
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            Email: grot.matej@gmail.com
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.flickr.com/photos/59723420@N03/" target="_blank">
+                Flickr photography <img src="./images/flickr.png" class="footer-img">
+            </a>
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.codingame.com/profile/6975e0707369af35c49b031fdbd8b2854184741" target="_blank">
+                Codin Game <img src="./images/codinGame2.png" class="footer-img codinGame">
+            </a>
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.linkedin.com/in/matej-grot" target="_blank">
+                LinkedIn <img src="./images/linkedin_white.svg" class="footer-img">
+            </a>
+        </div>
+    </footer>
+</body>
+
 </html>

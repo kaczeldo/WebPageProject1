@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="cs-cz">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Personal portfolio of Matej Grot">
+    <meta name="keywords"
+        content="portfolio, web-design, programming, front-end, back-end, developer, junior, Java, React, JavaScript">
+    <meta name="author" content="Matej Grot">
+
+    <link rel="stylesheet" href="styl_about.css" type="text/css" class="avatar">
+    <link rel="stylesheet" href="css/lightbox.min.css" type="text/css">
+    <link rel="shortcut icon" href="obrazky/10692893_spray_paint_graffiti_king_art_icon.ico">
+    <script src="js/lightbox-plus-jquery.min.js"></script>
+    <script src="./js/translate.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/6.0.3/tinymce.min.js"></script>
+    <script>
+        tinymce.init({
+            selector: "textarea[id*=content]",
+            entities: "160,nbsp",
+            entity_encoding: "named",
+            entity_encoding: "raw"
+        });
+    </script>
+
+    <title>GeeWebDesign</title>
+</head>
+
+<body id="home-body">
+    <header>
+        <nav class="navbar navbar-expand-md">
+            <a class="navbar-brand d-flex" href="#">
+                <img src="./images/logo.png" class="d-inline-block align-top" width="32" height="32" alt="Twitter" />
+                <div class="d-flex flex-column align-items-start">
+                    <div>
+                        Matěj <span>Grot</span>
+                    </div>
+                    <small>Developer</small>
+                </div>
+            </a>
+            <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#obsah-navigacni-listy" aria-controls="obsah-navigacni-listy" aria-expanded="false"
+                aria-label="Rozbalit navigaci">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="obsah-navigacni-listy">
+                <ul class="navbar-nav ms-auto" style="margin-right: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" data-i18n="link-home" href="index.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link aktivni" data-i18n="link-about" href="about.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="link-cv" href="skill.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-i18n="link-portfolio" href="portfolio.html"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link kontakt" href="kontakt.html">Contact</a>
+                    </li>
+                </ul>
+
+            </div>
+            <select class="position-absolute top-0 end-0 mt-2 me-2 form-select w-auto" id="languageSwitcher">
+                <option value="en">EN</option>
+                <option value="cz">CZ</option>
+            </select>
+
+        </nav>
+    </header>
+
+
+    <article>
+        <section id="my-name">
+            <div class="image-part">
+                <h1 data-i18n="h1-my-name"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-my-name"></p>
+                <img src="./images/MG_Real_Portrait.jpg" id="my-name-portrait">
+            </div>
+        </section>
+        <section id="it-path">
+            <div class="image-part">
+                <h1 data-i18n="h1-it-path"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-it-path"></p>
+            </div>
+        </section>
+        <section id="uni-fails">
+            <div class="image-part">
+                <h1 data-i18n="h1-uni-fails"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-uni-fails"></p>
+            </div>
+        </section>
+        <section id="work-years">
+            <div class="image-part">
+                <h1 data-i18n="h1-work-years"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-work-years"></p>
+                <p data-i18n="p-work-years-2"></p>
+                <p data-i18n="p-work-years-3"></p>
+            </div>
+        </section>
+        <section id="re-inkarnace">
+            <div class="image-part">
+                <h1 data-i18n="h1-re-inkarnace"></h1>
+            </div>
+            <div class="paragraph-part">
+                <p data-i18n="p-re-inkarnace"></p>
+                <p data-i18n="p-re-inkarnace-2"></p>
+                <p data-i18n="p-re-inkarnace-3"></p>
+            </div>
+        </section>
+    </article>
+
+    <footer class="d-flex justify-content-evenly align-items-center row">
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            Tel: +420 604467627
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            Email: grot.matej@gmail.com
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.flickr.com/photos/59723420@N03/" target="_blank">
+                Flickr photography <img src="./images/flickr.png" class="footer-img">
+            </a>
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.codingame.com/profile/6975e0707369af35c49b031fdbd8b2854184741" target="_blank">
+                Codin Game <img src="./images/codinGame2.png" class="footer-img codinGame">
+            </a>
+        </div>
+        <div class="footer-link col-6 col-md-4 col-lg-2">
+            <a href="https://www.linkedin.com/in/matej-grot" target="_blank">
+                LinkedIn <img src="./images/linkedin_white.svg" class="footer-img">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>

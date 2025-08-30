@@ -1,0 +1,526 @@
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(fonty/Poppins-ExtraBold.ttf);
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: BebasNeue;
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
+
+/* WHOLE PAGE stylings */
+
+html {
+    background: #03191E;
+}
+
+body {
+    font: 14px "Poppins";
+    background-color: #20A4F3;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 100px 0 0 0;
+}
+
+/* HEADER stylings */
+
+body>header {
+    height: 100px;
+    width: 100%;
+    background: #03191E;
+    color: white;
+    top: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+li.nav-item>a {
+    color: white;
+    font-size: 1.1 em;
+    text-transform: uppercase;
+    margin: auto 20px auto 20px;
+}
+
+li.nav-item>a.aktivni {
+    border-bottom: 2px solid #FE9000;
+}
+
+li.nav-item>a.kontakt {
+    border: 2px solid #03191E;
+    background-color: #FE9000;
+    border-radius: 20px;
+    padding-left: 5px
+}
+
+li.nav-item>a.kontakt:hover {
+    color: #03191E;
+}
+
+li.nav-item>a:hover {
+    color: #FE9000;
+}
+
+li.nav-item>a:visited {
+    color: white;
+}
+
+a.navbar-brand {
+    color: white;
+    font-size: 1.6em;
+}
+
+a.navbar-brand:visited {
+    color: white;
+}
+
+.navbar-brand>div>small {
+    font-size: 0.65em;
+    text-transform: uppercase;
+}
+
+.navbar-brand>div>div>span {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+a.navbar-brand:hover {
+    color: white;
+}
+
+a.navbar-brand>img {
+    width: 70px;
+    height: 70px;
+    margin: auto 10px auto 10px;
+}
+
+.custom-toggler {
+    border: 2px solid #20A4F3;
+    border-radius: 12px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    background-color: white;
+    margin-right: 100px;
+}
+
+.custom-toggler span {
+    display: block;
+    height: 3px;
+    width: 24px;
+    background-color: #20A4F3;
+    border-radius: 2px;
+}
+
+#languageSwitcher {
+    background-color: white;
+    border: 2px solid black;
+    color: #03191E;
+}
+
+.navbar-collapse {
+    background-color: #03191E;
+    /* or any color */
+    padding-left: 10px;
+}
+
+/* Main Content Stylings */
+
+article header {
+    height: 80px;
+}
+
+article {
+    width: 100%;
+    background-color: #20A4F3;
+}
+
+article h1,
+article h2,
+article h3,
+article h4,
+article h5,
+article h6 {
+    color: white;
+    padding: 10px 0;
+}
+
+article h1 {
+    font-size: 2.3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-bottom: 4px solid #FE9000;
+    margin: 0;
+}
+
+article h2 {
+    font-size: 2em;
+}
+
+article section p {
+    line-height: 1.8em;
+    margin-bottom: 1.5em;
+}
+
+article section a {
+    color: #FE9000;
+}
+
+.cistic {
+    clear: both;
+}
+
+
+/* Stylings of about page */
+article>section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.paragraph-part {
+    font-size: 1.4em;
+    max-width: 750px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-part {
+
+    width: 100%;
+    height: 500px;
+
+    background-size: cover;
+    /* makes it cover the entire element */
+    background-position: center;
+    /* centers the image */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#my-name .image-part {
+    background-image: url('./images/P5150228.JPG');
+}
+
+#my-name .paragraph-part {
+    margin-top: 125px;
+    margin-bottom: 125px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#my-name-portrait {
+    width: 150px;
+}
+
+@media (min-width: 768px) {
+    #my-name-portrait {
+        width: 200px;
+    }
+}
+
+@media (min-width: 992px) {
+    #my-name-portrait {
+        width: 300px;
+    }
+}
+
+#it-path .image-part {
+    background-image: url('./images/P6090665_cropped_twice.JPG');
+}
+
+#it-path .image-part h1 {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#it-path .paragraph-part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#uni-fails .image-part {
+    background-image: url('./images/P4240163.JPG');
+}
+
+#uni-fails .paragraph-part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#work-years .image-part {
+    background-image: url('./images/P6090693.JPG');
+}
+
+#work-years .paragraph-part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+#re-inkarnace .image-part {
+    background-image: url('./images/P3190033.JPG');
+}
+
+#re-inkarnace .paragraph-part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex-direction: column;
+}
+
+/* HOME PAGE stylings */
+
+#welcome .image-part {
+    background-image: url('./images/P6060454_cut2.JPG');
+}
+
+#welcome .image-part>h1 {
+    color: #FE9000;
+}
+
+#welcome .paragraph-part {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#list-of-pages {
+    font-size: 1.3em;
+    border: 1px solid white;
+    background-color: white;
+}
+
+#list-of-pages>ul {
+    list-style: none;
+}
+
+#list-of-pages>ul>li {
+    margin: 10px;
+}
+
+#list-of-pages>ul>li>a {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    display: block;
+}
+
+#list-of-pages>ul>li>a:hover {
+    border: 1px solid black;
+    background-color: white;
+    color: black;
+}
+
+/* SKILLS page stylings */
+article#skills-page {
+    background-color: white;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.rating {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    line-height: 0;
+}
+
+.rect {
+    width: 20px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 2px;
+    display: block;
+    flex: 0 0 auto;
+    /* prevent flex from resizing them */
+}
+
+.filled {
+    background: #20A4F3;
+}
+
+.skills-h1 {
+    color: #03191E;
+}
+
+.skill-section-container {
+    width: 300px;
+}
+
+@media (min-width: 768px) {
+    .skill-section-container {
+        width: 400px;
+    }
+}
+
+@media (min-width: 950px) {
+    .skill-section-container {
+        width: 500px;
+    }
+}
+
+/* Portfolio Overview page stylings */
+#portfolio-body {
+    background-color: #20A4F3;
+}
+
+.portfolio-card-group {
+    margin: 20px;
+}
+
+.portfolio-card {
+    margin: 20px;
+    max-width: 350px;
+    z-index: 0;
+}
+
+.portfolio-card>a {
+    text-decoration: none;
+    color: #03191E;
+}
+
+.portfolio-card>a:hover {
+    color: #03191E;
+}
+
+.portfolio-card>a:visited {
+    color: #03191E;
+}
+
+@media (min-width: 768px) {
+    .portfolio-card {
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 950px) {
+    .portfolio-card {
+        max-width: 500px;
+    }
+}
+
+/* Portfolio - natkaBlog stylings */
+.skills-h1 {
+    font-size: 1.75em;
+    text-align: center;
+    text-decoration: none;
+    border: 0;
+    color: #20A4F3;
+}
+
+
+body#portfolio-natkaBlog {
+    background-color: white;
+}
+
+article#natkaBlog {
+    background-color: white;
+}
+
+div.natkaBlog-container {
+    max-width: 950px;
+}
+
+.natkaBlog-label {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: auto 20px auto 20px;
+}
+
+.natkaBlog-par {
+    margin: auto 20px auto 20px;
+}
+
+.natkaBlog-ul {
+    margin: 20px;
+}
+
+/* Contact page stylings */
+.contact-notice {
+    font-style: italic;
+    font-weight: bold;
+    margin: 40px 20px 40px 20px;
+    font-size: 1.1em;
+    text-align: center;
+}
+
+#contact-article {
+    background-image: url("./images/draty.JPG");
+}
+
+.contact-img {
+    width: 400px;
+}
+
+@media (min-width: 768px) {
+
+    .contact-img {
+        width: 500px;
+    }
+}
+
+@media (min-width: 950px) {
+
+    .contact-img {
+        width: 750px;
+    }
+}
+
+/* Footer stylings */
+
+footer {
+    background: #03191E;
+    color: white;
+    height: 100px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer img.footer-img {
+    width: 40px;
+    height: 40px;
+}
+
+footer div.footer-link {
+    padding-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+img.codinGame {
+    border-radius: 100%;
+}
