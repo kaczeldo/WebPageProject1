@@ -213,7 +213,7 @@ article>section {
 }
 
 #my-name .image-part {
-    background-image: url('./images/P5150228.JPG');
+    background-image: url('./images/list_50DPI.jpg');
 }
 
 #my-name .paragraph-part {
@@ -256,7 +256,7 @@ article>section {
 }
 
 #uni-fails .image-part {
-    background-image: url('./images/P4240163.JPG');
+    background-image: url('./images/krava_40DPI.jpg');
 }
 
 #uni-fails .paragraph-part {
@@ -267,7 +267,7 @@ article>section {
 }
 
 #work-years .image-part {
-    background-image: url('./images/P6090693.JPG');
+    background-image: url('./images/bazaar.jpg');
 }
 
 #work-years .paragraph-part {
@@ -279,7 +279,7 @@ article>section {
 }
 
 #re-inkarnace .image-part {
-    background-image: url('./images/P3190033.JPG');
+    background-image: url('./images/louka_45.jpg');
 }
 
 #re-inkarnace .paragraph-part {
@@ -293,7 +293,7 @@ article>section {
 /* HOME PAGE stylings */
 
 #welcome .image-part {
-    background-image: url('./images/P6060454_cut2.JPG');
+    background-image: url('./images/ostrovy_2k.jpg');
 }
 
 #welcome .image-part>h1 {
@@ -475,7 +475,7 @@ div.natkaBlog-container {
 }
 
 #contact-article {
-    background-image: url("./images/draty.JPG");
+    background-image: url("./images/draty_50DPI.jpg");
 }
 
 .contact-img {
