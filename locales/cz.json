@@ -59,6 +59,19 @@
     "bootstrap": "Bootstrap",
     "contact-h1": "Kontaktujte mně!",
     "contact-notice": "Neváhejte mě kontaktovat skrze libovolnou platformu, email či telefon.",
-    "link-contact": "Kontakt"
+    "link-contact": "Kontakt",
+    "sachovnice-h1": "Šachy v JS",
+    "sachovnice-description-label": "Šachy v JavaScriptu",
+    "sachovnice-description": "Zde Vám prezentuji šachy, naprogramované čistě v JavaScriptu. Účelem je pouze představit mé schopnosti. Hráč musí klikat tahy za obě barvy.",
+    "sachovnice-features-label": "Funkcionlaita",
+    "single-page-application": "Jedná se o Single-Page-Application",
+    "all-chess-logic": "Plná podpora veškerých šachových pravidel:",
+    "castles": "rošáda",
+    "en-passant": "en-passant",
+    "pinned-piece": "připnutí figury (pin)",
+    "checkmate": "šach-mat",
+    "status-bar": "status bar",
+    "the-game-chess": "HRA!"
+
 
 }

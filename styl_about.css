@@ -402,6 +402,7 @@ article#skills-page {
     margin: 20px;
     max-width: 350px;
     z-index: 0;
+    max-height: 350px;
 }
 
 .portfolio-card>a {
@@ -420,12 +421,54 @@ article#skills-page {
 @media (min-width: 768px) {
     .portfolio-card {
         max-width: 400px;
+
+        max-height: 400px;
     }
 }
 
 @media (min-width: 950px) {
     .portfolio-card {
         max-width: 500px;
+        max-height: 500px;
+    }
+}
+
+#sachovnice-card-img {
+    max-height: 100px;
+}
+
+@media (min-width: 500px) {
+    #sachovnice-card-img {
+        max-height: 150px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    #sachovnice-card-img {
+        max-height: 200px;
+    }
+}
+
+@media (min-width: 950px) {
+    #sachovnice-card-img {
+        max-height: 305px;
+    }
+}
+
+.card-img-top {
+    max-height: 150px;
+}
+
+@media (min-width: 768px) {
+    .card-img-top {
+        max-height: 200px;
+    }
+}
+
+@media (min-width: 950px) {
+    .card-img-top {
+        max-height: 305px;
     }
 }
 

@@ -60,6 +60,18 @@
     "bootstrap": "Bootstrap",
     "contact-h1": "Contact me!",
     "contact-notice": "Please do not hesitate to contact me through any of the platforms listed below.",
-    "link-contact": "Contact"
+    "link-contact": "Contact",
+    "sachovnice-h1": "Chess in JS",
+    "sachovnice-description-label": "Chess game in JavaScript",
+    "sachovnice-description": "Here I present the chess game purely in JavaScript. The purpose is only demonstration of my skills. The player must click moves for both colors.",
+    "sachovnice-features-label": "Features",
+    "single-page-application": "It is Single-Page-Application",
+    "all-chess-logic": "Full implementation of chess logic:",
+    "castles": "castles",
+    "en-passant": "en-passant",
+    "pinned-piece": "pinned-piece",
+    "checkmate": "checkmate",
+    "status-bar": "status bar",
+    "the-game-chess": "The GAME!"
 
 }

@@ -29,11 +29,11 @@
     <title>GeeWebDesign</title>
 </head>
 
-<body id="portfolio-body">
+<body id="portfolio-natkaBlog">
     <header>
         <nav class="navbar navbar-expand-md">
             <a class="navbar-brand d-flex" href="#">
-                <img src="./images/logo.png" class="d-inline-block align-top" width="32" height="32" alt="Twitter" />
+                <img src="./images/logo.png" class="d-inline-block align-top" width="32" height="32" alt="Logo" />
                 <div class="d-flex flex-column align-items-start">
                     <div>
                         Matěj <span>Grot</span>
@@ -77,31 +77,56 @@
         </nav>
     </header>
 
-    <article>
-        <div class="card-group portfolio-card-group d-flex justify-content-center align-items-center">
-            <div class="card portfolio-card">
-                <a href="natkaBlog.html">
-                    <img class="card-img-top" src="./images/natkaBlog.png" alt="NatkaBlog">
-                    <div class="card-body">
-                        <h4 class="card-title" data-i18n="portfolio-card-title"></h4>
-                        <p class="card-text" data-i18n="portfolio-card-text"></p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <small class="text-muted" data-i18n="portfolio-card-date"></small>
+    <article id="natkaBlog" class="d-flex justify-content-center" style="background-color: #20A4F3;">
+        <div class="d-flex flex-column align-items-center justify-content-center natkaBlog-container"
+            style="background-color: white;">
+            <h1 class="skills-h1" data-i18n="sachovnice-h1"></h1>
+            <div class="my-2 d-flex justify-content-start align-items-center row" style="width: 100%;">
+                <span class="natkaBlog-label col-12 col-md-4">URL</span>
+                <div class="natkaBlog-par col-12 col-md-4">
+                    <p><a href="./sachovnice/sachovnice.html" target="_blank" data-i18n="the-game-chess"></a></p>
                 </div>
             </div>
-            <div class="card portfolio-card">
-                <a href="portfolio_sachovnice.html">
-                    <img class="card-img-top" id="sachovnice-card-img" src="./images/sachovnice_portfolio.png" alt="Sachovnice">
-                    <div class="card-body">
-                        <h4 class="card-title" data-i18n="portfolio-card-title"></h4>
-                        <p class="card-text" data-i18n="portfolio-card-text"></p>
-                    </div>
-                </a>
-                <div class="card-footer">
-                    <small class="text-muted" data-i18n="portfolio-card-date"></small>
+            <div class="my-2 d-flex justify-content-start align-items-center row" style="width: 100%;">
+                <span class="natkaBlog-label col-12 col-md-4">GitHub</span>
+                <div class="natkaBlog-par col-12 col-md-4">
+                    <p><a href="https://github.com/kaczeldo/sachovnice.git" target="_blank">GitHub</a></p>
                 </div>
+            </div>
+            <div class="my-2 d-flex justify-content-start align-items-center row" style="width: 100%;">
+                <span class="natkaBlog-label col-12 col-md-4" data-i18n="sachovnice-description-label"></span>
+                <div class="natkaBlog-par col-12 col-md-6">
+                    <p data-i18n="sachovnice-description"></p>
+                </div>
+            </div>
+            <div class="my-2 d-flex justify-content-start align-items-center row" style="width: 100%;">
+                <span class="natkaBlog-label col-12 col-md-4" data-i18n="sachovnice-features-label"></span>
+                <ul class="natkaBlog-ul col-12 col-md-6 mx-3">
+                    <li data-i18n="single-page-application"></li>
+                    <li>
+                        <span data-i18n="all-chess-logic"></span>
+                        <ul>
+                            <li data-i18n="castles"></li>
+                            <li data-i18n="en-passant"></li>
+                            <li data-i18n="pinned-piece"></li>
+                            <li data-i18n="checkmate"></li>
+                        </ul>
+                    </li>
+                    <li data-i18n="status-bar"></li>
+                </ul>
+            </div>
+            <div class="my-2 d-flex justify-content-start align-items-center row" style="width: 100%;">
+                <span class="natkaBlog-label col-12 col-md-4" data-i18n="natkaBlog-technologies-label"></span>
+                <ul class="col-12 col-md-6 mx-3">
+                    <li>
+                        <span data-i18n="front-end"></span>
+                        <ul>
+                            <li>JavaScript</li>
+                            <li data-i18n="html-css"></li>
+                            <li data-i18n="bootstrap"></li>                            
+                        </ul>
+                    </li>
+                </ul>
             </div>
         </div>
     </article>
