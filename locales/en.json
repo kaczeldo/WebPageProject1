@@ -72,6 +72,8 @@
     "pinned-piece": "pinned-piece",
     "checkmate": "checkmate",
     "status-bar": "status bar",
-    "the-game-chess": "The GAME!"
+    "the-game-chess": "The GAME!",
+    "portfolioSachy-card-title": "Chess Game in JavaScript",
+    "portfolioSachy-card-text": "Chess written purely in JavaScript."
 
 }

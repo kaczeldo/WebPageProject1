@@ -71,7 +71,7 @@
     "pinned-piece": "připnutí figury (pin)",
     "checkmate": "šach-mat",
     "status-bar": "status bar",
-    "the-game-chess": "HRA!"
-
-
+    "the-game-chess": "HRA!",
+    "portfolioSachy-card-title": "Šachy v JavaScriptu",
+    "portfolioSachy-card-text": "Šachy naprogramované komplet v JavaScriptu."
 }

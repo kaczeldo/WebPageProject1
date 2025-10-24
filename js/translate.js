@@ -1,6 +1,9 @@
 window.onload = function() {
+    const languageSwitcher = document.getElementById("languageSwitcher");
     // default language
-    let currentLang = "en";
+    let currentLang = localStorage.getItem("lang") || "en";
+
+    languageSwitcher.value = currentLang;
 
     // load translation file
     async function loadTranslations(lang) {
@@ -21,8 +24,9 @@ window.onload = function() {
     }
 
     //listen to language changes
-    document.getElementById("languageSwitcher").addEventListener("change", (e) => {
+    languageSwitcher.addEventListener("change", (e) => {
         currentLang = e.target.value;
+        localStorage.setItem("lang", currentLang);
         applyTranslations(currentLang);
     })
 
